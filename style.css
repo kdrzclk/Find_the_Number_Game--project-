@@ -1,3 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Mon, Arial, Helvetica, sans-serif;
+  background: linear-gradient(orange, #fff);
+  background-repeat: no-repeat;
+}
+
+.title {
+  text-align: center;
+  margin: 4rem 0rem;
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container--input-guess {
+  border: none;
+  border-radius: 0.4rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+}
+
+#container--input-guess:focus {
+  outline: none;
+}
+
+.container--check-button {
+  color: #fff;
+  background-color: blue;
+  width: 4rem;
+  height: 1.5rem;
+  border-radius: 0.4rem;
+  border: none;
+  margin-left: 1rem;
+}
+
+.container--check-button:active {
+  background-color: red;
+}
+
+.image {
+  margin: 2rem auto;
+  width: 25%;
+  /* border: 1px solid; */
+  text-align: center;
+}
+
 .image > img {
-  width: 50vh;
+  width: 35vh;
+}
+
+.text {
+  text-align: center;
+}
+
+.text > h2 {
+  margin-bottom: 1rem;
 }

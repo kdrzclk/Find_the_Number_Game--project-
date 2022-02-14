@@ -7,12 +7,17 @@
     <title>Find the Number Game</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1>Guess The Number (1 - 100)</h1>
+  <body id="body">
+    <h1 class="title">Guess The Number (1 - 100)</h1>
 
     <div class="container">
       <div class="container--input">
-        <input type="text" name="" id="container--input-guess" />
+        <input
+          type="number"
+          name="enterednumber"
+          id="container--input-guess"
+          placeholder="Enter Your Guess Number..."
+        />
       </div>
       <div>
         <button class="container--check-button">CHECK</button>
@@ -20,12 +25,26 @@
     </div>
 
     <div class="image">
-      <img src="./images/magic_hat.png" alt="magic_hat" />
+      <img id="img1" src="./images/magic_hat.png" alt="magic_hat" />
+      <img
+        id="img2"
+        src="./images/congratulations-congrats.gif"
+        alt="congratulations"
+        style="display: none"
+      />
+      <img
+        id="img3"
+        src="./images/images.jfif"
+        alt="gameover"
+        style="display: none"
+      />
     </div>
 
-    <div>
-      <h2>Write the Number</h2>
-      <p>Number of attempts: <span></span></p>
+    <div class="text">
+      <h2 class="result"></h2>
+      <p class="count">Number of attempts: 5</p>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>

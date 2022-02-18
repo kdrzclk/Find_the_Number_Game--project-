@@ -28,6 +28,7 @@ function findingNumber() {
     result.style.textShadow = "13px 12px 12px black";
     result.style.fontSize = "5rem";
     body.style.background = "brown";
+    return;
   } else if (inputGuess.value > randomNumber) {
     if (inputGuess.value > 100) {
       result.innerHTML = "Please Enter a number less than 100";
@@ -56,14 +57,16 @@ let counter = 5;
 function myCounter() {
   counter--;
   count.innerHTML = `Number of attempts: ${counter}`;
-  inputGuess.value = "";
 
-  if (counter == 0) {
+  
+
+  if (counter == 0 && randomNumber != inputGuess.target) {
     checkButton.style.display = "none";
     count.style.display = "none";
     inputGuess.style.display = "none";
     title.style.display = "none";
     img1.style.display = "none";
+    img2.style.display = "none";
     img3.style.display = "block";
     result.style.display = "none";
     body.style.background = "black";
